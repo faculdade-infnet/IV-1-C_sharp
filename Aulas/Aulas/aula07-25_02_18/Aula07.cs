@@ -6,7 +6,7 @@ namespace Aula_07
     public class Aula07
     {
         /// <summary>
-        /// Metodo para instanciar uma class que tem outro projeot como referencia
+        /// Metodo para instanciar uma class que tem outro projeto como referencia
         /// </summary>
         internal void InstanciaDeClass()
         {
@@ -29,11 +29,6 @@ namespace Aula_07
             pessoa.Endereco = endereco;
             pessoa.ContaBancaria = contaBancaria;
             pessoa.Nascimento = new DateTime(1971, 07, 20);
-            
-            Console.WriteLine($"Nome: {pessoa.Nome}");
-            Console.WriteLine($"Logradouro: {pessoa.Endereco.Logradouro} | Bairro: {pessoa.Endereco.Bairro}");
-            Console.WriteLine($"Nascimento: {pessoa.Nascimento:dd/MM/yyyy}");
-            Console.WriteLine();
 
             var (Years, Months, Days) = pessoa.RetornarIdadeCompleta();
 

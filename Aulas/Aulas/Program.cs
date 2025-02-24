@@ -5,6 +5,8 @@ using Aula_04;
 using Aula_05;
 using Aula_06;
 using Aula_07;
+using Aula_08;
+using System;
 
 class Program
 {
@@ -17,15 +19,36 @@ class Program
         //Aula04_25_02_07();
         //Aula05_25_02_11();
         //Aula06_25_02_14();
-        Aula07_25_02_18();
+        //Aula07_25_02_18();
+        Aula08_25_02_21();
     }
 
+
+    /// <summary>
+    /// <list type="bullet">    
+    ///     <item>Introdução ao .Net</item>
+    ///     <item>Componentes</item>
+    ///     <item>Visual Studio Community 2022</item>
+    ///     <item>Criando soluções e projetos</item>
+    /// </list>
+    /// </summary>
     private static void Aula01_25_01_29()
     {
         Aula01 aula01 = new Aula01();
         aula01.FirstProject();
     }
 
+
+    /// <summary>
+    /// <list type="bullet">        
+    ///     <item>Tipagem</item>
+    ///     <item>Value e Reference Types</item>
+    ///     <item>Variáveis e escopo</item>
+    ///     <item>Strings</item>
+    ///     <item>Operadores Aritméticos</item>
+    ///     <item>Depuração</item>
+    /// </list>
+    /// </summary>
     private static void Aula02_25_01_31()
     {
         var aula02 = new Aula02();
@@ -39,6 +62,14 @@ class Program
         Console.ReadKey();
     }
 
+
+    /// <summary>
+    /// <list type="bullet">        
+    ///     <item>Funções e Subrotinas</item>
+    ///     <item>Uso Classe System.Exception</item>
+    ///     <item>Tratamento de Exceções</item>
+    /// </list>
+    /// </summary>
     private static void Aula03_25_02_04()
     {
         var aula03_1 = new FuncoesSubrotinas();
@@ -52,6 +83,21 @@ class Program
         Console.ReadKey();
     }
 
+
+    /// <summary>
+    /// <list type="bullet">        
+    ///     <item>Datas</item>
+    ///     <item>Estruturas de Controle de Fluxo:</item>
+    ///     <list type="number">        
+    ///         <item>If</item>
+    ///         <item>Switch</item>
+    ///         <item>While</item>
+    ///         <item>du While</item>
+    ///         <item>For</item>
+    ///         <item>Foreach</item>
+    ///     </list>
+    /// </list>
+    /// </summary>
     private static void Aula04_25_02_07()
     {
         var aula04_1 = new Datas();
@@ -71,6 +117,19 @@ class Program
         Console.ReadKey();
     }
 
+
+    /// <summary>
+    /// <list type="bullet">            
+    ///     <item>Estruturas de Controle de Fluxo:</item>
+    ///     <list type="number">
+    ///         <item>While</item>
+    ///         <item>du While</item>
+    ///         <item>For</item>
+    ///         <item>Foreach</item>
+    ///     </list>    
+    ///     <item>Nulos</item>
+    /// </list>
+    /// </summary>
     private static void Aula05_25_02_11()
     {
         var aula05_1 = new Nulos();
@@ -88,6 +147,13 @@ class Program
         Console.ReadKey();
     }
 
+
+    /// <summary>
+    /// <list type="bullet">    
+    ///     <item>Classes</item>
+    ///     <item>Objetos</item>
+    /// </list>
+    /// </summary>
     private static void Aula06_25_02_14()
     {
         var aula06_1 = new InstanciaDeClassSimples();
@@ -97,9 +163,30 @@ class Program
         aula06_2.InstanciaDeOutraInstancia();
     }
 
+
+    /// <summary>
+    /// <list type="bullet">    
+    ///     <item>Métodos</item>    
+    ///     <item>Biblioteca de Classe</item>    
+    /// </list>
+    /// </summary>
     private static void Aula07_25_02_18()
     {
         var aula07 = new Aula07();
         aula07.InstanciaDeClass();
+    }
+
+
+    /// <summary>
+    /// <list type="bullet">    
+    ///     <item>Sobrecargas</item>    
+    ///     <item>Construtores</item>    
+    /// </list>
+    /// </summary>
+    private static void Aula08_25_02_21()
+    {
+        var aula08 = new Aula08();
+        //aula08.InstanciaDeClass1();
+        aula08.Sobrecarga2();
     }
 }

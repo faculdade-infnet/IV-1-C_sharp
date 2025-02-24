@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DadosPessoais.Financeiro
+﻿namespace DadosPessoais.Financeiro
 {
     public class ContaBancaria
     {
@@ -13,6 +7,11 @@ namespace DadosPessoais.Financeiro
 
         }
 
+        /// <summary>
+        /// Construtor Alternativo
+        /// </summary>
+        /// <param name="instituicao"></param>
+        /// <param name="saldoInicial"></param>
         public ContaBancaria(string instituicao, double saldoInicial)
         {
             this.Instituicao = instituicao;
@@ -26,18 +25,28 @@ namespace DadosPessoais.Financeiro
         public bool Poupanca { get; set; }
         public DateTime DataOperacao { get; private set; }
         public double Saldo { get; private set; }
-        
+
+        // Aula 08 - 18/02/2025
         public void Debit(double value)
         {
             this.Saldo -= value;
         }
 
+        // Aula 08 - 18/02/2025
         public void Debit(int value)
         {
             this.Saldo -= value;
         }
 
+        // Aula 07 - 18/02/2025
         public void Debit(double value, DateTime dataOperacao)
+        {
+            this.Saldo -= value;
+            this.DataOperacao = dataOperacao;
+        }
+
+        // Aula 08 - 21/02/2025
+        public void Debit(int value, DateTime dataOperacao)
         {
             this.Saldo -= value;
             this.DataOperacao = dataOperacao;

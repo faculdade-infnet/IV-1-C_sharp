@@ -23,9 +23,10 @@
         }
 
 
+
         /// <summary>
         /// Exemplo de uso de tipos anuláveis <br/>
-        /// Um tipo anulável pode ser criado usando-se também o caractere ?, porém, na declaração da variável.Ou como Nullable<T>.
+        /// Um tipo anulável pode ser criado usando-se também o caractere ?, porém, na declaração da variável ou como Type Nullable.        
         /// </summary>
         internal void TiposAnulaveis_T()
         {
