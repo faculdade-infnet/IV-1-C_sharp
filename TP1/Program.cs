@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TP1
+﻿namespace TP1
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)            
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            // Para executar a aula desejada, basta descomentar a linha correspondente
+
+            //HelloWorld helloWorld = new HelloWorld();
+            //helloWorld.Start();
+
+            //Exercicio_9 exercicio_9 = new Exercicio_9();
+            //exercicio_9.Start();
+
+            Exercicio_10 exercicio_10 = new Exercicio_10();
+            exercicio_10.Start();
         }
     }
 }

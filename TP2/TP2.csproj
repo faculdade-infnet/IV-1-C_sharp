@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{842064BA-84AA-445E-9720-327B0F7F8901}</ProjectGuid>
+    <ProjectGuid>{01DD6D34-0679-4C31-BD39-083DB90B93E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TP1</RootNamespace>
-    <AssemblyName>TP1</AssemblyName>
+    <RootNamespace>TP2</RootNamespace>
+    <AssemblyName>TP2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicio_01.cs" />
+    <Compile Include="Exercicio_02.cs" />
+    <Compile Include="Exercicio_03.cs" />
+    <Compile Include="Exercicio_04.cs" />
+    <Compile Include="Exercicio_05.cs" />
+    <Compile Include="Exercicio_06.cs" />
+    <Compile Include="Exercicio_07.cs" />
+    <Compile Include="Exercicio_08.cs" />
+    <Compile Include="Exercicio_09.cs" />
     <Compile Include="Exercicio_10.cs" />
-    <Compile Include="Exercicio_9.cs" />
-    <Compile Include="HelloWorld.cs" />
+    <Compile Include="Exercicio_11.cs" />
+    <Compile Include="Exercicio_12.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
