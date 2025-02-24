@@ -18,14 +18,14 @@ namespace TP2
             //var exercicio_02 = new Exercicio_02();
             //exercicio_02.Start();
 
-            var exercicio_03 = new Exercicio_03();
-            exercicio_03.Start();
+            //var exercicio_03 = new Exercicio_03();
+            //exercicio_03.Start();
 
             //var exercicio_04 = new Exercicio_04();
             //exercicio_04.Start();
 
-            //var exercicio_05 = new Exercicio_05();
-            //exercicio_05.Start();
+            var exercicio_05 = new Exercicio_05();
+            exercicio_05.Start();
 
             //var exercicio_06 = new Exercicio_06();
             //exercicio_06.Start();
