@@ -118,11 +118,11 @@ namespace Aula_04
             DateTime dateTime3 = DateTime.ParseExact("10-22-2015", "MM-dd-yyyy", culture);
             Console.WriteLine($"ParseExact: {dateTime3}");
 
-            // O formato da data nao é compativel com a cultura pt-BR
+            // O formato da data nao é compativel com a cultura en-US
             bool isSuccess = DateTime.TryParse("10-22-2015", out DateTime dateTime4);
             Console.WriteLine($"TryParse resultou em: {isSuccess} para: {dateTime4}");
 
-            // Aqui o formato da data é compativel com a cultura pt - BR
+            // Aqui o formato da data é compativel com a cultura en-US
             bool isSuccessNew = DateTime.TryParse("22-10-2015", out DateTime dateTime5);
             Console.WriteLine($"TryParse resultou em: {isSuccessNew} para: {dateTime5}");
 

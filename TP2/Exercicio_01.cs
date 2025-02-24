@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace TP2
 {
     public class Exercicio_01
     {
+        /// <summary>
+        /// Calcula a idade completa de uma pessoa em anos, meses e dias
+        /// </summary>
         public void Start()
         {
             Console.WriteLine("Informe sua Data de nascimento (10/10/1989): ");
@@ -31,10 +31,14 @@ namespace TP2
                     Console.WriteLine($"Você tem {Years} anos, {Months} meses e {Days} dias de vida.");
                 }
             }
+
+            Console.ReadKey();
         }
 
 
-
+        /// <summary>
+        /// Retorna a idade completa de uma pessoa em anos, meses e dias
+        /// </summary>
         public (double Years, double Months, double Days) RetornarIdadeCompleta(DateTime dataNascimento)
         {
             DateTime hoje = DateTime.Now.Date;
