@@ -10,18 +10,27 @@ namespace TP2
         /// </summary>
         public void Start()
         {
-            Console.WriteLine("Informe a temperatura em Celsius: ");
+            Console.WriteLine($"########## {this.GetType().Name}: Conversor de Temperatura, Celcius para Fahrenheit e Kelvin ##########\n");
+
+            Console.WriteLine("Informe o valor da temperatura em Celsius: ");
             string input = Console.ReadLine();
             double temperatura = 0;
 
             if (!double.TryParse(input, out temperatura))
                 Console.WriteLine("Temperatura inválida! Você deve informar um número!");
 
-            double F = temperatura * 9 / 5 + 32;
-            double K = temperatura + 273.15;
 
-            Console.WriteLine($"{temperatura}°Celcius equivale a {Math.Round(F, 2)} Fahrenheit");
-            Console.WriteLine($"{temperatura}°Celcius equivale a {Math.Round(K, 2)} KelvinKelvin");
+            double F = CelciusToFahrenheit(temperatura);
+            double K = CelciusToFahrenheit(temperatura);
+
+            Console.WriteLine($"{temperatura}° Celcius é igual a {Math.Round(F, 2)}° Fahrenheit");
+            Console.WriteLine($"{temperatura}° Celcius é igual a {Math.Round(K, 2)}° Kelvin");
+
+            Console.ReadKey();
         }
+
+        public double CelciusToFahrenheit(double temperatura) => temperatura * 9 / 5 + 32;
+
+        public double CelciusToKelvin(double temperatura) => temperatura + 273.15;
     }
 }

@@ -5,11 +5,16 @@ namespace TP2
 {
     public class Exercicio_03
     {
+        /// <summary>
+        /// Calcula a diferença entre duas datas
+        /// </summary>
         public void Start()
         {
+            Console.WriteLine($"########## {this.GetType().Name}: Calcula a diferença entre duas datas ##########\n");
+
             Console.WriteLine("Informe a menor Data(10/10/1989): ");
             string primeiraData = Console.ReadLine();
-            
+
             Console.WriteLine("Informe a maior Data(10/10/1989): ");
             string segundaData = Console.ReadLine();
 
@@ -29,7 +34,7 @@ namespace TP2
                 else
                 {
                     var (Years, Months, Days) = RetornarDiferencaEntreDatas(menorData, maiorData);
-                    Console.WriteLine($"Adiferença entre as datas é de {Years} anos, {Months} meses e {Days} dias.");
+                    Console.WriteLine($"A diferença entre as datas é de {Years} anos, {Months} meses e {Days} dias.");
                 }
             }
 
@@ -41,9 +46,9 @@ namespace TP2
         public (double Years, double Months, double Days) RetornarDiferencaEntreDatas(DateTime menorData, DateTime maiorData)
         {
             TimeSpan diferenca = maiorData - menorData;
-            
+
             int totalDays = diferenca.Days;
-            int years = totalDays/ 365;
+            int years = totalDays / 365;
             int diasRestantes = totalDays % 365;
 
             int months = diasRestantes / 30;

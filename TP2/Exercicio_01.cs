@@ -10,6 +10,8 @@ namespace TP2
         /// </summary>
         public void Start()
         {
+            Console.WriteLine($"########## {this.GetType().Name}: Calcula a idade completa de uma pessoa em anos, meses e dias ##########\n");
+
             Console.WriteLine("Informe sua Data de nascimento (10/10/1989): ");
 
             string dataNascimento = Console.ReadLine();
@@ -23,7 +25,7 @@ namespace TP2
             {
                 if (nascimento > DateTime.Today)
                 {
-                    Console.WriteLine($"A data informada não pode ser superior a data atual!");
+                    Console.WriteLine("A data informada não pode ser superior a data atual!");
                 }
                 else
                 {

@@ -7,10 +7,12 @@ namespace TP2
     public class Exercicio_02
     {
         /// <summary>
-        /// Calcula quantos dias faltam para o próximo aniversário
+        /// Cálcula quantos dias faltam para o próximo aniversário
         /// </summary>
         public void Start()
         {
+            Console.WriteLine($"########## {this.GetType().Name}: Calcula quantos dias faltam para o próximo aniversário ##########\n");
+
             Console.WriteLine("Informe sua Data de nascimento (10/10/1989): ");
 
             string dataNascimento = Console.ReadLine();

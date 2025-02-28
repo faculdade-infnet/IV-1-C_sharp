@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TP2
 {
@@ -13,6 +10,8 @@ namespace TP2
         /// </summary>
         public void Start()
         {
+            Console.WriteLine($"########## {this.GetType().Name}: Solicita NOME, IDADE, TELEFONE E E-MAIL do usuário e exiba os dados cadastrados de forma organizada ##########\n");
+
             Console.WriteLine("Informe o seu nome: ");
             string nome = Console.ReadLine();
 
@@ -20,7 +19,7 @@ namespace TP2
             string idadeInput = Console.ReadLine();
             int idade = 0;
 
-            if (!int.TryParse(idadeInput, out idade) && idade <= 150)            
+            if (!int.TryParse(idadeInput, out idade) && idade <= 150)
                 Console.WriteLine("Idade inválida! Você deve informar um número inteiro!");
 
             Console.WriteLine("Informe o seu telefone: ");
