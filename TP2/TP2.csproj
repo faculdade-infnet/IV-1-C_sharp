@@ -60,9 +60,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="documentos\enunciado_TP2.pdf" />
     <None Include="documentos\samuel_hermany_DR2_TP2.docx" />
+    <None Include="documentos\samuel_hermany_DR2_TP2.pdf" />
     <None Include="documentos\TP2.xlsx" />
-    <None Include="documentos\TP2_enunciado.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
