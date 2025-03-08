@@ -11,4 +11,21 @@
     <ProjectReference Include="..\DadosPessoais\DadosPessoais.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="_aula12-25_03_12\" />
+    <Folder Include="_aula19-25_04_04\" />
+    <Folder Include="_aula20-25_04_07\" />
+    <Folder Include="_aula22-25_04_11\" />
+    <Folder Include="_aula21-25_04_09\" />
+    <Folder Include="_aula18-25_04_02\" />
+    <Folder Include="_aula17-25_03_28\" />
+    <Folder Include="_aula16-25_03_26\" />
+    <Folder Include="_aula15-25_03_21\" />
+    <Folder Include="_aula13-25_03_14\" />
+    <Folder Include="_aula14-25_03_19\" />
+    <Folder Include="_aula11-25_03_07\" />
+    <Folder Include="_aula10-25_02_28\" />
+    <Folder Include="_aula09-25_02_26\" />
+  </ItemGroup>
+
 </Project>
