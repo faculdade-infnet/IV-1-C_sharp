@@ -32,7 +32,7 @@
         /// </summary>
         internal void OperadorDeCoalescencia()
         {
-            Console.WriteLine("\n########### Método - Trabalhando com Nulos - Operador de Coalescência ###########");        
+            Console.WriteLine("\n########### Método - Trabalhando com Nulos - Operador de Coalescência ###########");
 
             string semConteudo = null;
             // Se tem conteúdo exibe o valor a esquerda, senão exibe o valor a direita

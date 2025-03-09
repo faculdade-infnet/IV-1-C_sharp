@@ -1,5 +1,4 @@
-﻿using DadosPessoais;
-using DadosPessoais.Financeiro;
+﻿using DadosPessoais.Financeiro;
 
 namespace Aula_08
 {

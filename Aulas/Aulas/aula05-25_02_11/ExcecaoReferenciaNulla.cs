@@ -14,7 +14,7 @@
             try
             {
                 nome = null;
-                string message =$"O nome possui {nome.Length} caracteres";
+                string message = $"O nome possui {nome.Length} caracteres";
                 Console.WriteLine(message);
             }
             catch (NullReferenceException nEx)

@@ -34,7 +34,7 @@ namespace Aula_07
 
             Console.WriteLine($"Nome: {pessoa.Nome}");
             Console.WriteLine($"Idade: {pessoa.RetornarIdade()}");
-            Console.WriteLine($"Idade {Years} anos | {Months} meses | {Days} dias") ;
+            Console.WriteLine($"Idade {Years} anos | {Months} meses | {Days} dias");
             Console.WriteLine($"Logradouro: {pessoa.Endereco.Logradouro} | Bairro: {pessoa.Endereco.Bairro}");
             Console.WriteLine($"Nascimento: {pessoa.Nascimento:d}");
             Console.WriteLine($"Banco: {pessoa.ContaBancaria.Instituicao}");

@@ -1,12 +1,17 @@
 ﻿namespace DadosPessoais.Financeiro
 {
-    public class ContaBancaria
+    public class ContaBase
+    {
+        public int Conta { get; set; }
+        public byte Digito { get; set; }
+    }
+
+    public class ContaBancaria : ContaBase
     {
         public ContaBancaria()
         {
 
         }
-
         /// <summary>
         /// Construtor Alternativo
         /// </summary>
@@ -20,8 +25,7 @@
 
         public string Instituicao { get; set; } = string.Empty;
         public string Agencia { get; set; } = string.Empty;
-        public int Conta { get; set; }
-        public byte Digito { get; set; }
+
         public bool Poupanca { get; set; }
         public DateTime DataOperacao { get; private set; }
         public double Saldo { get; private set; }

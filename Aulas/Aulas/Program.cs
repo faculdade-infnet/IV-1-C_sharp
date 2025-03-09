@@ -36,8 +36,8 @@ class Program
         //Aula07_25_02_18();
         //Aula08_25_02_21();
         //Aula09_25_02_26();
-        Aula10_25_02_28();
-        //Aula11_25_03_07();
+        //Aula10_25_02_28();
+        Aula11_25_03_07();
         //Aula12_25_03_12();
         //Aula13_25_03_14();
         //Aula14_25_03_19();
@@ -234,24 +234,27 @@ class Program
 
     /// <summary>
     /// <list type="bullet">    
-    ///     <item></item>
+    ///     <item>static class</item>
+    ///     <item>partial class</item>
+    ///     <item>Herança</item>
     /// </list>
     /// </summary>
     private static void Aula10_25_02_28()
     {
         var aula10 = new Aula10();
-        //aula10.InstanciaDeClass1();        
+        aula10.StaticClass();
+        aula10.UsoExtensionMethods();
     }
 
 
-    ///// <summary>
-    ///// <list type="bullet">    
-    /////     <item></item>
-    ///// </list>
-    ///// </summary>
-    //private static void Aula11_25_02_28()
-    //{
-    //    var aula11 = new Aula11();
-    //    //aula11.InstanciaDeClass1();        
-    //}
+    /// <summary>
+    /// <list type="bullet">    
+    ///     <item></item>
+    /// </list>
+    /// </summary>
+    private static void Aula11_25_03_07()
+    {
+        var aula11 = new Aula11();
+        //aula11.InstanciaDeClass1();        
+    }
 }

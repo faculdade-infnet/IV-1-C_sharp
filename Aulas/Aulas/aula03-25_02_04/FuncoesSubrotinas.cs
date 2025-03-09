@@ -7,7 +7,7 @@
         /// </summary>
         public void Subrotinas() => ProcessTime();
 
-        
+
         /// <summary>
         /// Metodo com funções, com retorno único e múltiplo
         /// </summary>

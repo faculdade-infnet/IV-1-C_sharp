@@ -8,12 +8,12 @@
         internal void CondicionalIf()
         {
             Console.WriteLine("\n########### Método - Condicional If ###########");
-            
+
             DateTime primeiro = new(DateTime.Now.Year, DateTime.Now.Month, 1);
             DateTime ultimo = primeiro.AddMonths(1).AddSeconds(-1);
             DateTime hoje = DateTime.Now;
 
-            if (primeiro.DayOfWeek >= DayOfWeek.Sunday && primeiro .DayOfWeek != DayOfWeek.Saturday)
+            if (primeiro.DayOfWeek >= DayOfWeek.Sunday && primeiro.DayOfWeek != DayOfWeek.Saturday)
             {
                 Console.WriteLine("O primeiro dia do mês é um dia útil");
             }
@@ -42,7 +42,7 @@
             else if (hoje.Day == ultimo.Day)
             {
                 Console.WriteLine("Hoje é o último dia do mês");
-            }            
+            }
             else
             {
                 Console.WriteLine("Hoje é um dia qualquer");
@@ -102,7 +102,7 @@
         internal void EstrutruaLacoDoWhile()
         {
             Console.WriteLine("\n########### Método - Laço Repetição DO WHILE ###########");
-            
+
             int i = 0;
 
             do
@@ -133,7 +133,7 @@
         internal void EstrutruaLacoForeach()
         {
             Console.WriteLine("\n########### Método - Laço Repetição FOREACH ###########");
-            
+
             string[] names = { "zezinho", "huguinho", "luizinho" };
             foreach (var name in names)
             {

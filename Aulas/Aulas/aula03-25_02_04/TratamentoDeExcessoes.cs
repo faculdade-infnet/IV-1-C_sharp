@@ -79,7 +79,7 @@
             }
         }
 
-        private void ConnectDatabase(bool v) 
+        private void ConnectDatabase(bool v)
         {
             Console.WriteLine("Banco de dados conectado com sucesso!");
         }

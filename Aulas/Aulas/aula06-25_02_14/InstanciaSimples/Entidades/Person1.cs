@@ -8,19 +8,19 @@
         // Field
         public string Nome = string.Empty;
         // Property
-        public DateTime Nascimento { get; set; } = DateTime.MinValue;        
-        
+        public DateTime Nascimento { get; set; } = DateTime.MinValue;
+
         private string _endereco = string.Empty;
         public string Endereco
         {
             get
-            { 
-                return _endereco; 
+            {
+                return _endereco;
             }
             set
             {
-                _endereco = value; 
+                _endereco = value;
             }
         }
-    }    
+    }
 }

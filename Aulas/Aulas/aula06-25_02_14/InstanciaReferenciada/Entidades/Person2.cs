@@ -11,5 +11,5 @@
         public DateTime Nascimento { get; set; }
 
         public Address Endereco { get; set; }
-    }    
+    }
 }

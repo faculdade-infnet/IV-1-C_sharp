@@ -1,10 +1,4 @@
-﻿using Aula_06.Entidades;
-using DadosPessoais;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DadosPessoais;
 
 namespace Aula_09
 {
@@ -87,7 +81,7 @@ namespace Aula_09
             } while (string.IsNullOrWhiteSpace(selecao));
         }
 
-                
+
         /// <summary>
         /// (01:07) Trabalhando com o funcioamneto do Capacity (armazenamento e uso de memória)
         /// </summary>

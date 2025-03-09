@@ -112,7 +112,7 @@
             Console.WriteLine($"Subtração: {sub}");
             Console.WriteLine($"Multiplicação: {mul}");
             Console.WriteLine($"Divisão: {div}");
-            Console.WriteLine($"Resto: {rest}");            
+            Console.WriteLine($"Resto: {rest}");
         }
     }
 }
