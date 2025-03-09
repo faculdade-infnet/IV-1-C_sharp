@@ -6,6 +6,20 @@ using Aula_05;
 using Aula_06;
 using Aula_07;
 using Aula_08;
+using Aula_09;
+using Aula_10;
+using Aula_11;
+using Aula_12;
+using Aula_13;
+using Aula_14;
+using Aula_15;
+using Aula_16;
+using Aula_17;
+using Aula_18;
+using Aula_19;
+using Aula_20;
+using Aula_21;
+using Aula_22;
 using System;
 
 class Program
@@ -20,7 +34,19 @@ class Program
         //Aula05_25_02_11();
         //Aula06_25_02_14();
         //Aula07_25_02_18();
-        Aula08_25_02_21();
+        //Aula08_25_02_21();
+        //Aula09_25_02_26();
+        Aula10_25_02_28();
+        //Aula11_25_03_07();
+        //Aula12_25_03_12();
+        //Aula13_25_03_14();
+        //Aula14_25_03_19();
+        //Aula15_25_03_21();
+        //Aula16_25_03_26();
+        //Aula17_25_03_02();
+        //Aula18_25_04_04();
+        //Aula19_25_04_07();
+        //Aula20_25_04_09();
     }
 
 
@@ -186,7 +212,46 @@ class Program
     private static void Aula08_25_02_21()
     {
         var aula08 = new Aula08();
-        //aula08.InstanciaDeClass1();
+        aula08.Sobrecarga1();
         aula08.Sobrecarga2();
+        aula08.Construtores();
     }
+
+
+    /// <summary>
+    /// <list type="bullet">    
+    ///     <item>Coleções (Listas Genéricas <T>)</item>    
+    /// </list>
+    /// </summary>
+    private static void Aula09_25_02_26()
+    {
+        var aula09 = new Aula09();
+        aula09.ListMethodAdd_AddRange();
+        aula09.IteracaoForEach();
+        aula09.CapacityExplicacao();
+    }
+
+
+    /// <summary>
+    /// <list type="bullet">    
+    ///     <item></item>
+    /// </list>
+    /// </summary>
+    private static void Aula10_25_02_28()
+    {
+        var aula10 = new Aula10();
+        //aula10.InstanciaDeClass1();        
+    }
+
+
+    ///// <summary>
+    ///// <list type="bullet">    
+    /////     <item></item>
+    ///// </list>
+    ///// </summary>
+    //private static void Aula11_25_02_28()
+    //{
+    //    var aula11 = new Aula11();
+    //    //aula11.InstanciaDeClass1();        
+    //}
 }

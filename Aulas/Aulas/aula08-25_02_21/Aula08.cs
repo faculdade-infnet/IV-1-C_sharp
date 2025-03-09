@@ -6,7 +6,7 @@ namespace Aula_08
     public class Aula08
     {
         /// <summary>        
-        /// (00:40)  Trabalhando com Sobrecaraga de métodos, Instanciar uma class
+        /// (00:40)  Trabalhando com Sobrecarga de métodos, Instanciar uma class
         /// </summary>
         internal void Sobrecarga1()
         {
