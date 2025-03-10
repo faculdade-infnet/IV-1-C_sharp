@@ -3,7 +3,7 @@ using DadosPessoais.Financeiro;
 
 namespace Aula_10
 {
-    public class Aula10
+    public sealed class Aula10
     {
         /// <summary>
         /// (00:10) Utilziando static class

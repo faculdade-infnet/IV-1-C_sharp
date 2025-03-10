@@ -37,8 +37,8 @@ class Program
         //Aula08_25_02_21();
         //Aula09_25_02_26();
         //Aula10_25_02_28();
-        Aula11_25_03_07();
-        //Aula12_25_03_12();
+        //Aula11_25_03_07();
+        Aula12_25_03_12();
         //Aula13_25_03_14();
         //Aula14_25_03_19();
         //Aula15_25_03_21();
@@ -248,13 +248,24 @@ class Program
 
 
     /// <summary>
+    /// Herança
     /// <list type="bullet">    
-    ///     <item></item>
+    ///     <item>sealed class</item>
+    ///     <item>construtores</item>
+    ///     <item>base class</item>
+    ///     <item>base class</item>
     /// </list>
+    /// Abstract Calss
     /// </summary>
     private static void Aula11_25_03_07()
     {
         var aula11 = new Aula11();
-        //aula11.InstanciaDeClass1();        
+        aula11.UsoHeranca();
+    }
+
+    private static void Aula12_25_03_12()
+    {
+        var aula12 = new Aula12();
+        //aula12.Start();
     }
 }

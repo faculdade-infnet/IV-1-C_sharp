@@ -47,5 +47,15 @@
             return snitized.Length == 4;
         }
 
+        /// <summary>
+        /// Verifica se o número da conta é válido, tem 4 dígitos        
+        /// </summary>
+        public static bool IsValidAccount(this int account, int v)
+        {
+            /// Extension method
+            // Converte para String e preenche com 0 à esquerda até ter 4 dígitos.
+            string snitized = account.ToString().PadLeft(4, '0');
+            return snitized.Length == 4;
+        }
     }
 }
