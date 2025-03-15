@@ -12,8 +12,8 @@ namespace TP3
         {
             // Para executar a aula desejada, basta descomentar a linha correspondente
 
-            var exercicio_01 = new Exercicio_01();
-            exercicio_01.Start();
+            //var exercicio_01 = new Exercicio_01();
+            //exercicio_01.Start();
 
             //var exercicio_02_03 = new Exercicio_02_03();
             //exercicio_02_03.Start();
@@ -36,8 +36,8 @@ namespace TP3
             //var exercicio_10_11 = new Exercicio_10_11();
             //exercicio_10_11.Start();
 
-            //var exercicio_12 = new Exercicio_12();
-            //exercicio_12.Start();
+            var exercicio_12 = new Exercicio_12();
+            exercicio_12.Start();
         }
     }
 }

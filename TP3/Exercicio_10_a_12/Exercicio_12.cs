@@ -24,8 +24,8 @@ namespace TP3
             double areaCirculo = circulo.CalcularArea();
             double areaEsfera = esfera.CalcularVolume();
 
-            Console.WriteLine($"Área do Círculo: {areaCirculo:F2}");
-            Console.WriteLine($"Volume da Esfera: {areaEsfera:F2}");
+            Console.WriteLine($"Área do Círculo para raio({circulo.Raio}): {areaCirculo:F2}");
+            Console.WriteLine($"Volume da Esfera para raio({esfera.Raio}): {areaEsfera:F2}");
         }
     }
 }
