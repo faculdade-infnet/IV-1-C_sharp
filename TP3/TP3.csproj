@@ -44,8 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exercicio_01.cs" />
-    <Compile Include="Exercicio_02.cs" />
-    <Compile Include="Exercicio_03.cs" />
+    <Compile Include="Exercicio_02_03_05.cs" />
     <Compile Include="Exercicio_04.cs" />
     <Compile Include="Exercicio_05.cs" />
     <Compile Include="Exercicio_06.cs" />
@@ -60,6 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="documentos\enunciado_TP3.pdf" />
+    <None Include="documentos\samuel_hermany_DR2_TP3.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
