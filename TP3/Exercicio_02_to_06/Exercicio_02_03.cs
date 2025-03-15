@@ -16,7 +16,7 @@ namespace TP3
     ///     <item>6 - Adicionando Construtores à Classe "Ingresso"</item>
     /// </list>
     /// </summary>
-    public class Exercicio_02_03_05
+    public class Exercicio_02_03
     {
         public void Start()
         {

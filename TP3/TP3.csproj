@@ -44,10 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exercicio_01.cs" />
-    <Compile Include="Exercicio_02_03_05.cs" />
-    <Compile Include="Exercicio_04.cs" />
-    <Compile Include="Exercicio_05.cs" />
-    <Compile Include="Exercicio_06.cs" />
+    <Compile Include="Exercicio_02_to_06\Exercicio_02_03.cs" />
+    <Compile Include="Exercicio_02_to_06\Exercicio_04.cs" />
+    <Compile Include="Exercicio_02_to_06\Exercicio_05.cs" />
+    <Compile Include="Exercicio_02_to_06\Exercicio_06.cs" />
     <Compile Include="Exercicio_07.cs" />
     <Compile Include="Exercicio_08.cs" />
     <Compile Include="Exercicio_09.cs" />
