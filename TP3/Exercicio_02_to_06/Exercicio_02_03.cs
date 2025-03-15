@@ -20,12 +20,7 @@ namespace TP3
     {
         public void Start()
         {
-            Console.WriteLine($"########## {this.GetType().Name}: Criando a Classe \"Ingresso\" ##########\n");
-            Console.WriteLine($"########## {this.GetType().Name}: Métodos Básicos da Classe \"Ingresso\" ##########\n");
-            Console.WriteLine($"########## {this.GetType().Name}: Criando Métodos de Propriedade (Getters e Setters) ##########\n");
-
-
-            Console.ReadKey();
+            Console.WriteLine($"########## {this.GetType().Name}: 'Criando a Classe \"Ingresso\"' e 'Métodos Básicos da Classe \"Ingresso\"' ##########\n");
         }
     }
 

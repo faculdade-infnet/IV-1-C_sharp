@@ -27,11 +27,8 @@ namespace TP3
             //var exercicio_06 = new Exercicio_06();
             //exercicio_06.Start();
 
-            var exercicio_07 = new Exercicio_07();
-            exercicio_07.Start();
-
-            //var exercicio_08 = new Exercicio_08();
-            //exercicio_08.Start();
+            //var exercicio_07_08 = new Exercicio_07_08();
+            //exercicio_07_08.Start();
 
             //var exercicio_09 = new Exercicio_09();
             //exercicio_09.Start();
