@@ -14,6 +14,18 @@ namespace TP3
         public void Start()
         {
             Console.WriteLine($"########## {this.GetType().Name}: Testando as Classes de Figuras ##########\n");
+
+            var circulo = new Circulo();
+            var esfera = new Esfera();
+
+            circulo.Raio = 3;
+            esfera.Raio = 5;
+
+            double areaCirculo = circulo.CalcularArea();
+            double areaEsfera = esfera.CalcularVolume();
+
+            Console.WriteLine($"Área do Círculo: {areaCirculo:F2}");
+            Console.WriteLine($"Volume da Esfera: {areaEsfera:F2}");
         }
     }
 }

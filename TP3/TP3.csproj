@@ -44,15 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exercicio_01.cs" />
-    <Compile Include="Exercicio_02_to_06\Exercicio_02_03.cs" />
-    <Compile Include="Exercicio_02_to_06\Exercicio_04.cs" />
-    <Compile Include="Exercicio_02_to_06\Exercicio_05.cs" />
-    <Compile Include="Exercicio_02_to_06\Exercicio_06.cs" />
-    <Compile Include="Exercicio_07_to_09\Exercicio_07_08.cs" />
-    <Compile Include="Exercicio_07_to_09\Exercicio_09.cs" />
-    <Compile Include="Exercicio_10.cs" />
-    <Compile Include="Exercicio_11.cs" />
-    <Compile Include="Exercicio_12.cs" />
+    <Compile Include="Exercicio_02_a_06\Exercicio_02_03.cs" />
+    <Compile Include="Exercicio_02_a_06\Exercicio_04.cs" />
+    <Compile Include="Exercicio_02_a_06\Exercicio_05.cs" />
+    <Compile Include="Exercicio_02_a_06\Exercicio_06.cs" />
+    <Compile Include="Exercicio_07_a_09\Exercicio_07_08.cs" />
+    <Compile Include="Exercicio_07_a_09\Exercicio_09.cs" />
+    <Compile Include="Exercicio_10_a_12\Exercicio_10_11.cs" />
+    <Compile Include="Exercicio_10_a_12\Exercicio_12.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
