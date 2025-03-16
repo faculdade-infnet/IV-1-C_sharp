@@ -43,14 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercicio_01.cs" />
-    <Compile Include="Exercicio_02_a_06\Exercicio_02_03.cs" />
+    <Compile Include="Exercicio_01\Exercicio_01.cs" />
+    <Compile Include="Exercicio_01\Livro.cs" />
     <Compile Include="Exercicio_02_a_06\Exercicio_04.cs" />
     <Compile Include="Exercicio_02_a_06\Exercicio_05.cs" />
     <Compile Include="Exercicio_02_a_06\Exercicio_06.cs" />
-    <Compile Include="Exercicio_07_a_09\Exercicio_07_08.cs" />
+    <Compile Include="Exercicio_02_a_06\Ingresso.cs" />
     <Compile Include="Exercicio_07_a_09\Exercicio_09.cs" />
-    <Compile Include="Exercicio_10_a_12\Exercicio_10_11.cs" />
+    <Compile Include="Exercicio_07_a_09\Matricula.cs" />
+    <Compile Include="Exercicio_10_a_12\Circulo.cs" />
+    <Compile Include="Exercicio_10_a_12\Esfera.cs" />
     <Compile Include="Exercicio_10_a_12\Exercicio_12.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

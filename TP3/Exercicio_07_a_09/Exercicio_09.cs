@@ -1,11 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TP3
 {
+    /// <summary>
+    /// Agora, mude de cenário: você vai criar um sistema simples de matrícula para uma faculdade. A ideia é cadastrar informações básicas do aluno e efetuar operações relacionadas à sua matrícula.
+    ///     <list type="bullet">    
+    ///         <item>7 - Modelando uma Matrícula</item>
+    ///         <item>8 - Criando Métodos na Classe de Matrícula</item>
+    ///         <item>9 - Testando a Classe de Matrícula</item>
+    ///     </list>
+    /// </summary>
     public class Exercicio_09
     {
         /// <summary>
@@ -26,11 +30,11 @@ namespace TP3
 
             matricula.ExibirInformacoes();
 
-            Console.Write("\n########## Chamada método Trancar Matrícula ##########\n");
+            Console.WriteLine("\n########## Chamada método Trancar Matrícula ##########");
             matricula.TrancarMatricula();
             matricula.ExibirInformacoes();
 
-            Console.Write("\n########## Chamada método Reativar Matrícula ##########\n");
+            Console.WriteLine("\n########## Chamada método Reativar Matrícula ##########");
             matricula.ReativarMatricula();
             matricula.ExibirInformacoes();
 
