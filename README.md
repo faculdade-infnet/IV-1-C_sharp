@@ -1,4 +1,4 @@
-# Disciplina Fundamentos de C# (C sharp)
+# Fundamentos de Desenvolvimento com C#
 Pastas:
 - Aulas - Exemplos de códigos desenvolvidos em sala de aula
 - TP1 - Trabalho Prático 1
@@ -7,5 +7,5 @@ Pastas:
 - AT  - Prova Final
 
 Modo de Uso:
-- Em cada pasta, há um arquivo Program.cs, que é o arquivo principal do projeto.
-- Para executar o código, basta abrir o arquivo Program.cs e descomentar o exercício que deseja executar.
+- No projeto existe um arquivo "Program.cs", que é o arquivo principal do projeto.
+- Para executar o código, basta abrir o arquivo Program.cs e descomentar o exercício que deseja executar e Iniciar a aplicação.
