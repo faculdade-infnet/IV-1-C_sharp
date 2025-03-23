@@ -13,7 +13,7 @@ namespace DadosPessoais.Financeiro
         public ContaBancaria() { }
 
         /// <summary>
-        /// Contutor Alternativo
+        /// Construtor Alternativo
         /// </summary>
         /// <param name="instituicao"></param>
         /// <param name="saldoInicial"></param>
@@ -29,12 +29,19 @@ namespace DadosPessoais.Financeiro
         public int Digito { get; set; }
         public bool Poupanca { get; set; }
 
-        // Aula 11 - 07/03/2025
+        public Documentacao Documentacao { get; set; }
+        public DocumentacaoRecord DocumentacaoRecord { get; set; }
+
         public void CheckAndDebit(double saldo, DateTime dataOperacao)
         {
             if (saldo > 0)
             {
                 throw new InvalidDebitException("Valor informado para débito é inválido", saldo);
+            }
+            else
+            {
+                this.Saldo += saldo;
+                
             }
         }
 

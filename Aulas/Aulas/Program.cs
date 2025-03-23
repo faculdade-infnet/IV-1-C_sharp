@@ -39,9 +39,9 @@ class Program
         //Aula10();
         //Aula11();
         //Aula12();
-        Aula13();
+        //Aula13();
         //Aula14();
-        //Aula15();
+        Aula15();
         //Aula16();
         //Aula17();
         //Aula18();
@@ -273,7 +273,6 @@ class Program
     ///     <item>HasSet</item>
     ///     <item>Virtual</item>
     /// </list>
-    /// Abstract Calss
     /// </summary>
     private static void Aula12()
     {
@@ -287,10 +286,7 @@ class Program
     ///     <item>Interface</item>
     ///     <item>IComparable</item>
     ///     <item>CompareTo</item>
-    ///     <item></item>
-    ///     <item></item>
     /// </list>
-    /// Abstract Calss
     /// </summary>
     private static void Aula13()
     {
@@ -299,6 +295,13 @@ class Program
     }
 
 
+    /// <summary>    
+    /// <list type="bullet">            
+    ///     <item>struct</item>
+    ///     <item>records</item>
+    ///     <item>Imutabilidade</item>
+    /// </list>
+    /// </summary>
     private static void Aula14()
     {
         var aula14 = new Aula14();
@@ -306,11 +309,20 @@ class Program
     }
 
 
+    /// <summary>    
+    /// <list type="bullet">            
+    ///     <item></item>    
+    ///     <item></item>    
+    ///     <item></item>    
+    ///     <item></item>    
+    /// </list>
+    /// </summary>
     private static void Aula15()
     {
         var aula15 = new Aula15();
         aula15.Start();
     }
+
 
 
     private static void Aula16()
