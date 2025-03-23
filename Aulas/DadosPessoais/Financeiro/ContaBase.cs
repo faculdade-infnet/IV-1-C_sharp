@@ -8,7 +8,12 @@
         public ContaBase(double saldo) => this.Saldo = saldo;
 
 
-        public double Saldo { get; private set; }
+        public virtual bool Transfer(double value, int contaDestino, byte digitoDestino)
+        {
+            return true;
+        }
+
+        public double Saldo { get; set; }
         public DateTime DataOperacao { get; private set; }
         public int Conta { get; set; }
         public byte Digito { get; set; }

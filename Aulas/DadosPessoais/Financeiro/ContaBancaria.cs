@@ -1,4 +1,8 @@
-﻿namespace DadosPessoais.Financeiro
+﻿
+using Exceptions;
+using System;
+
+namespace DadosPessoais.Financeiro
 {
     /// <summary>
     /// Class sealed indica que não pode ser herdada
@@ -7,56 +11,59 @@
     {
         public ContaBancaria() { }
 
+        /// <summary>
+        /// Contutor Alternativo
+        /// </summary>
+        /// <param name="instituicao"></param>
+        /// <param name="saldoInicial"></param>
         public ContaBancaria(string instituicao, double saldoInicial) : base(saldoInicial)
         {
             this.Instituicao = instituicao;
-            //this.Saldo = saldoInicial;
+            this.Saldo = saldoInicial;
         }
 
         public string Instituicao { get; set; } = string.Empty;
         public string Agencia { get; set; } = string.Empty;
-
+        public int Conta { get; set; }
+        public int Digito { get; set; }
         public bool Poupanca { get; set; }
 
         // Aula 11 - 07/03/2025
-        public void CheckAndDebit(double value, DateTime dataOperacao)
+        public void CheckAndDebit(double saldo, DateTime dataOperacao)
         {
-            if (value > 0)
+            if (saldo > 0)
             {
-                // Chama o método da classe base
-                base.Debit(value, dataOperacao);
+                throw new InvalidDebitException("Valor informado para débito é inválido", saldo);
             }
         }
 
-        #region Movido para arquivo ContaBase        
-        //public DateTime DataOperacao { get; private set; }
-        //public double Saldo { get; private set; }
 
-        //// Aula 08 - 18/02/2025
-        //public void Debit(double value)
-        //{
-        //    this.Saldo -= value;
-        //}
+        public override string ToString()
+        {
+            string resume = $"Banco: {this.Instituicao} | Conta: {this.Conta}-{this.Digito} | Saldo: {base.Saldo}";
+            return resume;
+        }
 
-        //// Aula 08 - 18/02/2025
-        //public void Debit(int value)
-        //{
-        //    this.Saldo -= value;
-        //}
+        public override bool Equals(object? obj)
+        {
+            if (obj is null)
+            {
+                return false;
+            }
 
-        //// Aula 07 - 18/02/2025
-        //public void Debit(double value, DateTime dataOperacao)
-        //{
-        //    this.Saldo -= value;
-        //    this.DataOperacao = dataOperacao;
-        //}
+            if (obj is not ContaBancaria)
+            {
+                return false;
+            }
 
-        //// Aula 08 - 21/02/2025
-        //public void Debit(int value, DateTime dataOperacao)
-        //{
-        //    this.Saldo -= value;
-        //    this.DataOperacao = dataOperacao;
-        //}
-        #endregion
+            bool result = (this.Conta == ((ContaBancaria)obj).Conta
+                            && this.Digito == ((ContaBancaria)obj).Digito);
+            return result;
+        }
+
+        override public int GetHashCode()
+        {
+            return HashCode.Combine(this.Conta, this.Digito);
+        }
     }
 }

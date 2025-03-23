@@ -38,8 +38,8 @@ class Program
         //Aula09_25_02_26();
         //Aula10_25_02_28();
         //Aula11_25_03_07();
-        Aula12_25_03_12();
-        //Aula13_25_03_14();
+        //Aula12_25_03_12();
+        Aula13_25_03_14();
         //Aula14_25_03_19();
         //Aula15_25_03_21();
         //Aula16_25_03_26();
@@ -263,9 +263,38 @@ class Program
         aula11.UsoHeranca();
     }
 
+
+    /// <summary>    
+    /// <list type="bullet">    
+    ///     <item>Exceções Personalizadas</item>
+    ///     <item>Override ToString</item>
+    ///     <item>Override Equals</item>
+    ///     <item>Override HasCode</item>
+    ///     <item>HasSet</item>
+    ///     <item>Virtual</item>
+    /// </list>
+    /// Abstract Calss
+    /// </summary>
     private static void Aula12_25_03_12()
     {
         var aula12 = new Aula12();
-        //aula12.Start();
+        aula12.Start();
+    }
+
+
+    /// <summary>    
+    /// <list type="bullet">        
+    ///     <item>Interface</item>
+    ///     <item>IComparable</item>
+    ///     <item>CompareTo</item>
+    ///     <item></item>
+    ///     <item></item>
+    /// </list>
+    /// Abstract Calss
+    /// </summary>
+    private static void Aula13_25_03_14()
+    {
+        var aula13 = new Aula13();
+        aula13.Start();
     }
 }
