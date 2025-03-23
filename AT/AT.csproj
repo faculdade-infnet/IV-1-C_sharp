@@ -47,10 +47,14 @@
     <Compile Include="Exercicio_02.cs" />
     <Compile Include="Exercicio_03.cs" />
     <Compile Include="Exercicio_04.cs" />
+    <Compile Include="Exercicio_06\Alunos.cs" />
     <Compile Include="Exercicio_05.cs" />
-    <Compile Include="Exercicio_06.cs" />
-    <Compile Include="Exercicio_07.cs" />
-    <Compile Include="Exercicio_08.cs" />
+    <Compile Include="Exercicio_06\Exercicio_06.cs" />
+    <Compile Include="Exercicio_07\ContaBancaria.cs" />
+    <Compile Include="Exercicio_07\Exercicio_07.cs" />
+    <Compile Include="Exercicio_08\Exercicio_08.cs" />
+    <Compile Include="Exercicio_08\Funcionario.cs" />
+    <Compile Include="Exercicio_08\Gerente.cs" />
     <Compile Include="Exercicio_09.cs" />
     <Compile Include="Exercicio_10.cs" />
     <Compile Include="Exercicio_11.cs" />

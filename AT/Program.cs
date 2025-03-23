@@ -1,4 +1,6 @@
-﻿namespace AT
+﻿using System;
+
+namespace AT
 {
     internal class Program
     {
@@ -6,8 +8,8 @@
         {
             // Para executar oexercícioa desejado, basta descomentar a linha correspondente
 
-            var exercicio_01 = new Exercicio_01();
-            exercicio_01.Start();
+            //var exercicio_01 = new Exercicio_01();
+            //exercicio_01.Start();
 
             //var exercicio_02 = new Exercicio_02();
             //exercicio_02.Start();
@@ -30,8 +32,8 @@
             //var exercicio_08 = new Exercicio_08();
             //exercicio_08.Start();
 
-            //var exercicio_09 = new Exercicio_09();
-            //exercicio_09.Start();
+            var exercicio_09 = new Exercicio_09();
+            exercicio_09.Start();
 
             //var exercicio_10 = new Exercicio_10();
             //exercicio_10.Start();
@@ -41,6 +43,8 @@
 
             //var exercicio_12 = new Exercicio_12();
             //exercicio_12.Start();
+
+            Console.Read();
         }
     }
 }
