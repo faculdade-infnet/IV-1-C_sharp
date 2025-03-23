@@ -1,4 +1,5 @@
 ﻿
+using DadosPessoais.Interfaces;
 using Exceptions;
 using System;
 
@@ -7,7 +8,7 @@ namespace DadosPessoais.Financeiro
     /// <summary>
     /// Class sealed indica que não pode ser herdada
     /// </summary>
-    public sealed class ContaBancaria : ContaBase
+    public sealed class ContaBancaria : ContaBase, IContaBase, IInvestimento, IComparable<ContaBancaria>
     {
         public ContaBancaria() { }
 
@@ -64,6 +65,23 @@ namespace DadosPessoais.Financeiro
         override public int GetHashCode()
         {
             return HashCode.Combine(this.Conta, this.Digito);
+        }
+
+        public double Aplicar(double value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CompareTo(ContaBancaria other)
+        {
+            // Se o saldo for igual então faz a ordenação pelo número da conta
+            if (this.Saldo == other.Saldo)
+            {
+                return this.Conta.CompareTo(other.Conta);
+            }
+
+            // Ordenação padrão: do maior saldo para o menor
+            return other.Saldo.CompareTo(this.Saldo);
         }
     }
 }

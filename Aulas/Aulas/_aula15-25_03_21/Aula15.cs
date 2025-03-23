@@ -2,5 +2,9 @@
 {
     public class Aula15
     {
+        public void Start()
+        {
+
+        }
     }
 }

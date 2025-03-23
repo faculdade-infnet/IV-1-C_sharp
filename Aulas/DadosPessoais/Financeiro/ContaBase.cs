@@ -1,17 +1,13 @@
-﻿namespace DadosPessoais.Financeiro
+﻿using DadosPessoais.Interfaces;
+
+namespace DadosPessoais.Financeiro
 {
     // Aula 11 - 07/03/2025
-    public class ContaBase : Auditing
+    public class ContaBase : Auditing, IContaBase
     {
         public ContaBase() { }
 
         public ContaBase(double saldo) => this.Saldo = saldo;
-
-
-        public virtual bool Transfer(double value, int contaDestino, byte digitoDestino)
-        {
-            return true;
-        }
 
         public double Saldo { get; set; }
         public DateTime DataOperacao { get; private set; }
@@ -34,10 +30,20 @@
             this.DataOperacao = dataOperacao;
         }
 
-
         public override void RegisterEntry(string entry)
         {
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
+        }
+
+        // Implementação Explicita
+        bool IContaBase.Transfer(double value, int contaDestino, byte digitoDestino)
+        {         
+            return true;
+        }
+        // Implementação Implicita
+        public virtual bool Transfer(double value, int contaDestino, byte digitoDestino)
+        {
+            return true;
         }
     }
 }

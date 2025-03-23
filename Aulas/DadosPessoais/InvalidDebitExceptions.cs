@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Exceptions
 {
     [Serializable]
-    internal class InvalidDebitException : Exception
+    public class InvalidDebitException : Exception
     {
         public InvalidDebitException() { }
 
