@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace AT
+namespace Exe_08
 {
     public class Funcionario
     {
@@ -26,7 +22,7 @@ namespace AT
 
         public void ExibirSalario()
         {
-            Console.WriteLine($"{Nome} ({Cargo}) - Salário: {CalcularSalario():C}");
+            Console.WriteLine($"{Nome} ({Cargo}) - Salário: {CalcularSalario():C2}");
         }
     }
 }

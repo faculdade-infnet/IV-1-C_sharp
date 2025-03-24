@@ -5,7 +5,7 @@ namespace AT
     public class Exercicio_12
     {
         /// <summary>
-        /// Jogo de Adivinhação, Número aleatório de 1 a 100 com palpites
+        /// Manipulação de Arquivos com Herança e Polimorfismo - Formatos de Exibição
         /// </summary>
         public void Start()
         {
@@ -14,7 +14,6 @@ namespace AT
             
 
 
-            Console.ReadKey();
         }
 
     }

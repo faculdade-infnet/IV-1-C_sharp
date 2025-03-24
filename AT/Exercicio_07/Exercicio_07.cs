@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace AT
+namespace Exe_07
 {
     public class Exercicio_07
     {

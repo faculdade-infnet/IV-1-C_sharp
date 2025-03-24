@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace AT
+namespace Exe_07
 {
     public class ContaBancaria
     {
@@ -22,7 +18,7 @@ namespace AT
             else
             {
                 Saldo += valor;
-                Console.WriteLine($"Depósito de {valor:C} realizado com sucesso!");
+                Console.WriteLine($"Depósito de {valor:C2} realizado com sucesso!");
             }
         }
 
@@ -34,12 +30,12 @@ namespace AT
         {
             if (valor > Saldo)
             {
-                Console.WriteLine($"Tentativa de saque: {valor:C}");
+                Console.WriteLine($"Tentativa de saque: {valor:C2}");
                 Console.WriteLine("Saldo insuficiente para realizar o saque!");
             }
             else
             {
-                Console.WriteLine($"Saque de {valor:C} realizado com sucesso!");
+                Console.WriteLine($"Saque de {valor:C2} realizado com sucesso!");
                 Saldo -= valor;
             }
         }
@@ -49,7 +45,7 @@ namespace AT
         /// </summary>
         public void ExbirSaldo()
         {
-            Console.WriteLine($"Saldo atual: {Saldo:C}");
+            Console.WriteLine($"Saldo atual: {Saldo:C2}");
         }
     }
 }

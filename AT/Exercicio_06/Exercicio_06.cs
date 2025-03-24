@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Linq;
-using static System.Net.Mime.MediaTypeNames;
 
-namespace AT
+namespace Exe_06
 {
     public class Exercicio_06
     {
         /// <summary>
-        /// Cadastro de Aluno
+        /// Cadastro de Alunos
         /// </summary>
         public void Start()
         {
