@@ -43,7 +43,14 @@ namespace Exe_11
                         contato.AdicionarContato(dataBasePath, contato);
                         break;
                     case "2":
-                        contato.ListarContatosCadastrados(dataBasePath);
+                        var items =  contato.ListarContatosCadastrados(dataBasePath);
+
+                        foreach (var item in items)
+                        {
+                            Console.WriteLine($"Nome: {item.Nome} | Telefone: {item.Telefone} | Email: {item.Email}");
+                        }
+
+                        Console.WriteLine();
                         break;
                     case "3":
                         Console.WriteLine("Encerrando programa...");

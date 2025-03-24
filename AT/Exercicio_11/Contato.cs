@@ -27,10 +27,10 @@ namespace Exe_11
         /// Realiza a inserção de um contato no arquivo de banco de dados
         /// </summary>
         /// <param name="dataBasePath"></param>
-        /// <param name="contato"></param>
-        public void AdicionarContato(string dataBasePath, Contato contato)
-        {            
-            string texto = $"{contato.Nome},{contato.Telefone},{contato.Email}";
+        /// <param name="item"></param>
+        public void AdicionarContato(string dataBasePath, Contato item)
+        {
+            string texto = $"{item.Nome},{item.Telefone},{item.Email}";
             EscreverArquivo(dataBasePath, texto);
             Console.WriteLine("Contato cadastrado com sucesso!\n");
         }
@@ -40,16 +40,10 @@ namespace Exe_11
         /// Lista todos os contatos cadastrados no arquivo de banco de dados
         /// </summary>
         /// <param name="dataBasePath"></param>
-        public void ListarContatosCadastrados(string dataBasePath)
+        public List<Contato> ListarContatosCadastrados(string dataBasePath)
         {
-            List<Contato> produtos = LerArquivo(dataBasePath);
-
-            foreach (var item in produtos)
-            {
-                Console.WriteLine($"Nome: {item.Nome} | Telefone: {item.Telefone} | Email: {item.Email}");
-            }
-
-            Console.WriteLine();
+            List<Contato> items = LerArquivo(dataBasePath);
+            return items;
         }
 
 

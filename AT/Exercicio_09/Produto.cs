@@ -22,13 +22,13 @@ namespace Exe_09
         /// Realiza a inserção de um produto no arquivo de banco de dados
         /// </summary>
         /// <param name="dataBasePath"></param>
-        public void InserirProduto(string dataBasePath, Produto produto)
+        public void InserirProduto(string dataBasePath, Produto item)
         {            
-            if (string.IsNullOrEmpty(produto.Nome) || produto.Quantidade == null || produto.Preco == null)
+            if (string.IsNullOrEmpty(item.Nome) || item.Quantidade == null || item.Preco == null)
                 Console.WriteLine("Produto não inserido! Informações inválidas.\n");
             else
             {
-                string texto = $"{produto.Nome},{produto.Quantidade},{produto.Preco}";
+                string texto = $"{item.Nome},{item.Quantidade},{item.Preco}";
                 EscreverArquivo(dataBasePath, texto);
                 Console.WriteLine("Produto cadastrado com sucesso!\n");
             }
@@ -41,8 +41,8 @@ namespace Exe_09
         /// <param name="dataBasePath"></param>
         public void ListarProdutos(string dataBasePath)
         {
-            List<Produto> produtos = LerArquivo(dataBasePath);
-            foreach (var item in produtos)
+            List<Produto> items = LerArquivo(dataBasePath);
+            foreach (var item in items)
             {
                 Console.WriteLine($"Produto: {item.Nome} | Quantidade: {item.Quantidade} | Preço: {item.Preco:C2}");
             }
