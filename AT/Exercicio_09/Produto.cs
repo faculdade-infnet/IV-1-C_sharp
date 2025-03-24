@@ -14,27 +14,31 @@ namespace Exe_09
         }
 
         public string Nome { get; set; }
-        public int Quantidade { get; set; }
-        public double Preco { get; set; }
+        public int? Quantidade { get; set; }
+        public double? Preco { get; set; }
 
-        public void InserirProduto(string dataBasePath)
-        {
-            Console.WriteLine("Informe o nome do produto:");
-            string nome = Console.ReadLine();
 
-            int? tempQuantidade = SolicitarQuantidade();
-            double? tempPreco = SolicitarPreco();
-
-            if (string.IsNullOrEmpty(nome) || tempQuantidade == null || tempPreco == null)
+        /// <summary>
+        /// Realiza a inserção de um produto no arquivo de banco de dados
+        /// </summary>
+        /// <param name="dataBasePath"></param>
+        public void InserirProduto(string dataBasePath, Produto produto)
+        {            
+            if (string.IsNullOrEmpty(produto.Nome) || produto.Quantidade == null || produto.Preco == null)
                 Console.WriteLine("Produto não inserido! Informações inválidas.\n");
             else
             {
-                string texto = $"{nome},{tempQuantidade},{tempPreco}";
+                string texto = $"{produto.Nome},{produto.Quantidade},{produto.Preco}";
                 EscreverArquivo(dataBasePath, texto);
-                Console.WriteLine("Produto Cadastrado com sucesso!\n");
+                Console.WriteLine("Produto cadastrado com sucesso!\n");
             }
         }
 
+
+        /// <summary>
+        /// Lista todos os produtos cadastrados no arquivo de banco de dados
+        /// </summary>
+        /// <param name="dataBasePath"></param>
         public void ListarProdutos(string dataBasePath)
         {
             List<Produto> produtos = LerArquivo(dataBasePath);
@@ -50,7 +54,7 @@ namespace Exe_09
         /// <summary>
         /// Solicita um número ao usuário e valida se o número é válido
         /// </summary>
-        private int? SolicitarQuantidade()
+        internal int? SolicitarQuantidade()
         {
             int? n1 = null;
 
@@ -68,10 +72,11 @@ namespace Exe_09
             return n1;
         }
 
+
         /// <summary>
         /// Solicita um número ao usuário e valida se o número é válido
         /// </summary>
-        private double? SolicitarPreco()
+        internal double? SolicitarPreco()
         {
             double? n1 = null;
 

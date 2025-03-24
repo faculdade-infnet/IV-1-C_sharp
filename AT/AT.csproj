@@ -59,7 +59,8 @@
     <Compile Include="Exercicio_09\Exercicio_09.cs" />
     <Compile Include="Exercicio_09\Produto.cs" />
     <Compile Include="Exercicio_10.cs" />
-    <Compile Include="Exercicio_11.cs" />
+    <Compile Include="Exercicio_11\Contato.cs" />
+    <Compile Include="Exercicio_11\Exercicio_11.cs" />
     <Compile Include="Exercicio_12.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

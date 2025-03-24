@@ -3,6 +3,7 @@ using Exe_06;
 using Exe_07;
 using Exe_08;
 using Exe_09;
+using Exe_11;
 
 namespace AT
 {
@@ -39,14 +40,14 @@ namespace AT
             //var exercicio_09 = new Exercicio_09();
             //exercicio_09.Start();
 
-            var exercicio_10 = new Exercicio_10();
-            exercicio_10.Start();
+            //var exercicio_10 = new Exercicio_10();
+            //exercicio_10.Start();
 
             //var exercicio_11 = new Exercicio_11();
             //exercicio_11.Start();
 
-            //var exercicio_12 = new Exercicio_12();
-            //exercicio_12.Start();
+            var exercicio_12 = new Exercicio_12();
+            exercicio_12.Start();
 
             Console.Read();
         }

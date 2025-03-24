@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Exe_09
 {
@@ -10,7 +11,7 @@ namespace Exe_09
         /// Verifica se o arquivo existe, caso não exista, cria o arquivo
         /// </summary>
         /// <param name="path"></param>
-        public bool CheckAndCreateFile(string filePath)
+        public static bool CheckAndCreateFile(string filePath)
         {
             string directoryPath = Path.GetDirectoryName(filePath);
 
@@ -49,7 +50,7 @@ namespace Exe_09
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
-        public List<Produto> LerArquivo(string path)
+        public virtual List<Produto> LerArquivo(string path)
         {
             var lista = new List<Produto>();
 
@@ -76,5 +77,8 @@ namespace Exe_09
 
             return lista;
         }
+
+
+        public int ContarLinhas(string filePath) => File.ReadLines(filePath).Count();
     }
 }

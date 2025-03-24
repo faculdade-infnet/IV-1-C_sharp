@@ -14,13 +14,13 @@ namespace Exe_09
             Console.WriteLine($"########## {this.GetType().Name} ##########\n");
 
             CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
-            
+
             var produto = new Produto();
             var produtos = new List<Produto>();
 
             // Caminho do arquivo de banco de dados de produtos
-            string dataBasePath = @"C:/_AT_CSharp/listaRpodutos.txt";
-            produto.CheckAndCreateFile(dataBasePath);
+            string dataBasePath = @"C:/_AT_CSharp/listaProdutos.txt";
+            Diretorios.CheckAndCreateFile(dataBasePath);
 
             // Menu de opções
             while (true)
@@ -35,15 +35,26 @@ namespace Exe_09
                 switch (opcao)
                 {
                     case "1":
-                        if (produtos.Count >= 5)
+                        if (produto.ContarLinhas(dataBasePath) >= 5)
+                        {
                             Console.Write("Limite de produtos atingido!");
+                        }
                         else
-                            produto.InserirProduto(dataBasePath);
+                        {
+                            Console.WriteLine("Informe o nome do produto:");
+                            string nome = Console.ReadLine();
+
+                            produto.Quantidade = produto.SolicitarQuantidade();
+                            produto.Preco = produto.SolicitarPreco();
+
+                            produto.InserirProduto(dataBasePath, produto);
+                        }
                         break;
                     case "2":
                         produto.ListarProdutos(dataBasePath);
                         break;
                     case "3":
+                        Console.WriteLine("Encerrando programa...");
                         Environment.Exit(0);
                         break;
                     default:
