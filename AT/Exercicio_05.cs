@@ -64,7 +64,12 @@ namespace AT
         }
 
 
-        // Retorna a diferença entre duas datas
+        /// <summary>
+        /// Retorna a diferença entre duas datas
+        /// </summary>
+        /// <param name="menorData"></param>
+        /// <param name="maiorData"></param>
+        /// <returns></returns>
         public (int Years, int Months, int Days) RetornarDiferencaEntreDatas(DateTime menorData, DateTime maiorData)
         {
             TimeSpan diferenca = maiorData - menorData;

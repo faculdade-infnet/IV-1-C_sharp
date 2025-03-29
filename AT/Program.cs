@@ -26,8 +26,8 @@ namespace AT
             //var exercicio_04 = new Exercicio_04();
             //exercicio_04.Start();
 
-            //var exercicio_05 = new Exercicio_05();
-            //exercicio_05.Start();
+            var exercicio_05 = new Exercicio_05();
+            exercicio_05.Start();
 
             //var exercicio_06 = new Exercicio_06();
             //exercicio_06.Start();
@@ -47,8 +47,8 @@ namespace AT
             //var exercicio_11 = new Exercicio_11();
             //exercicio_11.Start();
 
-            var exercicio_12 = new Exercicio_12();
-            exercicio_12.Start();
+            //var exercicio_12 = new Exercicio_12();
+            //exercicio_12.Start();
 
             Console.Read();
         }

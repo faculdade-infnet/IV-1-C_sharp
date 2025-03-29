@@ -17,24 +17,10 @@ namespace Exe_06
             aluno.Curso = "Engenharia de Software";
             aluno.MediaNotas = 8.5;
 
-            string situacao = VerificarAprovacao(aluno.MediaNotas);
-            ExibirDados(aluno, situacao);
+            string situacao = aluno.VerificarAprovacao(aluno.MediaNotas);
+            aluno.ExibirDados(aluno, situacao);
+
             Console.ReadKey();
-        }
-
-        private string VerificarAprovacao(double media) => media >= 7 ? "Aprovado" : "Reprovado";
-
-
-        public void ExibirDados(Alunos aluno, string situacao)
-        {
-            string dateSample = $@"Dados do Aluno Cadastrado:
-            Nome: {aluno.Nome}
-            Matricula: {aluno.Matricula}
-            Curso: {aluno.Curso}
-            Nota: {aluno.MediaNotas}
-            Situação: {situacao}";
-
-            Console.WriteLine(dateSample);
         }
     }
 }

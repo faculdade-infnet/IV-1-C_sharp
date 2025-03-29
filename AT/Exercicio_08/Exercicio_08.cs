@@ -19,10 +19,6 @@ namespace Exe_08
 
             funcionario.ExibirSalario();
             gerente.ExibirSalario();
-
-            Console.ReadKey();
         }
-
-
     }
 }

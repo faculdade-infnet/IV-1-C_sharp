@@ -13,7 +13,7 @@ namespace AT
         {
             Console.WriteLine($"########## {this.GetType().Name} ##########\n");
 
-            string nomeCompleto = "áSamuel Hermnay";
+            string nomeCompleto = "Samuel Hermany";
             string nomeSifrado = nomeCompleto;
             // saida = "Ectnqu Ukngxc"
 

@@ -44,22 +44,24 @@ namespace AT
         private int RetornarIdadeDiasAteAniversario(DateTime nascimento)
         {
             CultureInfo culture = new CultureInfo("pt-BR");
-            DateTime hoje = DateTime.Now.Date;
-            bool isSuccess = false;
-            string proximoAniversario = string.Empty;
-            DateTime proximoAniversarioDateTime = DateTime.MinValue;
+            DateTime hoje = DateTime.Today;
+            DateTime proximoAniversario = new DateTime(hoje.Year, nascimento.Month, nascimento.Day);
 
-            while (!isSuccess)
+            // Se o aniversário já passou este ano, considerar o próximo ano
+            if (proximoAniversario < hoje)
             {
-                proximoAniversario = $"{nascimento.Day}-{nascimento.Month}-{hoje.Year}";
-                isSuccess = DateTime.TryParse(proximoAniversario, out proximoAniversarioDateTime);
-                nascimento = nascimento.AddDays(1);
+                proximoAniversario = proximoAniversario.AddYears(1);
             }
 
-            TimeSpan diferenca = proximoAniversarioDateTime - hoje;
-            int days = diferenca.Days;
+            int dias = (proximoAniversario - hoje).Days;
 
-            return days;
+            // Se faltar menos de 7 dias, exibir mensagem especial
+            if (dias < 7)
+            {
+                Console.WriteLine("Seu aniversário está chegando! 🎉");
+            }
+
+            return dias;
         }
     }
 }
