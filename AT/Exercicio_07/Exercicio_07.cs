@@ -21,12 +21,12 @@ namespace Exe_07
             Console.WriteLine($"Titular {conta.Titular}");
             conta.Depositar(500);
 
-            conta.ExbirSaldo();
+            conta.ExibirSaldo();
 
             conta.Sacar(700);
             conta.Sacar(200);
 
-            conta.ExbirSaldo();
+            conta.ExibirSaldo();
         }
     }
 }

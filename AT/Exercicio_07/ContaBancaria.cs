@@ -43,9 +43,7 @@ namespace Exe_07
         /// <summary>
         /// Operação para exibir o saldo atual da conta
         /// </summary>
-        public void ExbirSaldo()
-        {
-            Console.WriteLine($"Saldo atual: {Saldo:C2}");
-        }
+        public void ExibirSaldo() => Console.WriteLine($"Saldo atual: {Saldo:C2}");
+       
     }
 }

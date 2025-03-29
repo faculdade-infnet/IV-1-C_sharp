@@ -15,15 +15,9 @@ namespace Exe_08
             SalarioBase = salarioBase;
         }
 
-        public virtual double CalcularSalario()
-        {
-            return SalarioBase;
-        }
+        public virtual double CalcularSalario() => SalarioBase;
 
-        public void ExibirSalario()
-        {
-            Console.WriteLine($"{Nome} ({Cargo}) - Salário: {CalcularSalario():C2}");
-        }
+
+        public void ExibirSalario() => Console.WriteLine($"{Nome} ({Cargo}) - Salário: {CalcularSalario():C2}");
     }
 }
-

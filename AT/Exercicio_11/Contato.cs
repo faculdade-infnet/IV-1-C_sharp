@@ -40,11 +40,7 @@ namespace Exe_11
         /// Lista todos os contatos cadastrados no arquivo de banco de dados
         /// </summary>
         /// <param name="dataBasePath"></param>
-        public List<Contato> ListarContatosCadastrados(string dataBasePath)
-        {
-            List<Contato> items = LerArquivo(dataBasePath);
-            return items;
-        }
+        public List<Contato> ListarContatosCadastrados(string dataBasePath) => LerArquivo(dataBasePath);            
 
 
         /// <summary>

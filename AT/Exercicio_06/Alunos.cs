@@ -15,7 +15,7 @@ namespace Exe_06
         /// </summary>
         /// <param name="media"></param>
         /// <returns></returns>
-        internal string VerificarAprovacao(double media) => media >= 7 ? "Aprovado" : "Reprovado";
+        internal string VerificarAprovacao() => MediaNotas >= 7 ? "Aprovado" : "Reprovado";
 
 
         /// <summary>
@@ -23,13 +23,13 @@ namespace Exe_06
         /// </summary>
         /// <param name="aluno"></param>
         /// <param name="situacao"></param>
-        internal void ExibirDados(Alunos aluno, string situacao)
+        internal void ExibirDados(string situacao)
         {
             string dateSample = $@"Dados do Aluno Cadastrado:
-            Nome: {aluno.Nome}
-            Matricula: {aluno.Matricula}
-            Curso: {aluno.Curso}
-            Nota: {aluno.MediaNotas}
+            Nome: {Nome}
+            Matricula: {Matricula}
+            Curso: {Curso}
+            Nota: {MediaNotas}
             Situação: {situacao}";
 
             Console.WriteLine(dateSample);

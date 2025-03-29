@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exe_08
 {
@@ -12,14 +8,7 @@ namespace Exe_08
         {
         }
 
-        public override double CalcularSalario()
-        {
-            return SalarioBase * 1.2; // 20% de bônus
-        }
-
-        public void ExibirSalario()
-        {
-            Console.WriteLine($"{Nome} ({Cargo}) - Salário: {CalcularSalario():C2}");
-        }
+        // 20% de bônus
+        public override double CalcularSalario() => SalarioBase * 1.2;
     }
 }

@@ -17,8 +17,8 @@ namespace Exe_06
             aluno.Curso = "Engenharia de Software";
             aluno.MediaNotas = 8.5;
 
-            string situacao = aluno.VerificarAprovacao(aluno.MediaNotas);
-            aluno.ExibirDados(aluno, situacao);
+            string situacao = aluno.VerificarAprovacao();
+            aluno.ExibirDados(situacao);
 
             Console.ReadKey();
         }
