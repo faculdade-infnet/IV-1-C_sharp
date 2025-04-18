@@ -42,7 +42,7 @@ namespace Exe_09
                         else
                         {
                             Console.WriteLine("Informe o nome do produto:");
-                            string nome = Console.ReadLine();
+                            produto.Nome = Console.ReadLine();
 
                             produto.Quantidade = produto.SolicitarQuantidade();
                             produto.Preco = produto.SolicitarPreco();

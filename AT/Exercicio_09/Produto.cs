@@ -27,8 +27,8 @@ namespace Exe_09
             if (string.IsNullOrEmpty(item.Nome) || item.Quantidade == null || item.Preco == null)
                 Console.WriteLine("Produto não inserido! Informações inválidas.\n");
             else
-            {
-                string texto = $"{item.Nome},{item.Quantidade},{item.Preco}";
+            {                
+                string texto = $"{item.Nome},{item.Quantidade},{item.Preco.ToString().Replace(',', '.')}";                
                 EscreverArquivo(dataBasePath, texto);
                 Console.WriteLine("Produto cadastrado com sucesso!\n");
             }
